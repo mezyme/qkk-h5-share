@@ -24,7 +24,7 @@ var wxShare = function (qkk) {
     appId: 'wxcc33720dd6c23ba0', // 必填，公众号的唯一标识
     timestamp: qkk.timestamp, // 必填，生成签名的时间戳
     nonceStr: qkk.noncestr, // 必填，生成签名的随机串
-    signature: qkk.signature2, // 必填，签名，见附录1
+    signature: qkk.signature1, // 必填，签名，见附录1
     jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
   })
   wx.ready(function () {
