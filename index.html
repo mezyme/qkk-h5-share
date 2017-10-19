@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>去看看</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=3f46dc9127915937356d420d0251cb45"></script>
+  <script type="text/javascript" src="./js/libs/jquery-1.11.3.min.js"></script>
+  <script>
+    document.write('<script type=\'text/javascript\' src=\'./js/index.js?' + Math.random() + '\'></scr' + 'ipt>')
+    document.write('<script type=\'text/javascript\' src=\'./js/gaode.js?' + Math.random() + '\'></scr' + 'ipt>')
+    document.write('<script type=\'text/javascript\' src=\'./js/plugins/utils.js?' + Math.random() + '\'></scr' + 'ipt>')
+  </script>
+</head>
+
+<body>
+<div class="wrap">
+  <!-- 封面背景 -->
+  <div class="wrapBg"><img class="wrap_bg_img" src="" alt=""></div>
+  <div class="wrapVideo">
+    <video controls="controls" webkit-playsinline width="100%" height="50%" id="videoUrl" src=""></video>
+    <a href="javascript:void(0);"><img src="images/btn_close_video.png" alt=""></a></div>
+  <!-- 第一屏 -->
+  <div class="onePage">
+    <div class="head">
+      <div class="head_top"><img width="100%" src="images/head_top.png" alt=""></div>
+      <div class="head_title"></div>
+      <div class="head_bottom"><img width="100%" src="images/head_bottom.png" alt=""></div>
+    </div>
+    <div class="wrapVideoBtn"><img width="100%" src="images/wrapVideo.png" alt=""></div>
+    <div class="footer"><img width="100%" src="images/footer.png" alt=""></div>
+  </div>
+  <!-- 摘要 -->
+  <div class="summary">
+    <p class="summary_text"></p>
+    <p class="account_pic"><img src="" alt=""></p>
+    <p class="summary_title qkk_userName"></p>
+    <div class="datted_black"></div>
+    <div>
+      <p class="summary_title">时间</p>
+      <div class="summary_start">
+        <img src="images/icon_startDate.png" alt="">
+        <div>出发日期 / <span class="qkk_startDate"></span></div>
+      </div>
+      <div class="summary_tata">
+        <img src="images/icon_tripDays.png" alt="">
+        <div>出行天数 / <span class="qkk_days"></span>天</div>
+      </div>
+    </div>
+    <div class="datted_black"></div>
+    <div>
+      <p class="summary_title">地点</p>
+      <div class="summary_tata">
+        <img src="images/icon_tripAddress.png" alt="">
+        <div class="qkk_site"><span class=""></span></div>
+      </div>
+    </div>
+    <div class="datted_black"></div>
+    <div>
+      <p class="summary_title">人数</p>
+      <div class="summary_tata">
+        <img src="images/icon_tripPeoples.png" alt="">
+        <div class="qkk_peoples"><span></span>人</div>
+      </div>
+    </div>
+    <div class="datted_black"></div>
+    <div>
+      <p class="summary_title">出行方式</p>
+      <div class="summary_tata">
+        <img src="images/icon_tripMode.png" alt="">
+        <div class="qkk_travelType"><span></span></div>
+      </div>
+    </div>
+    <div class="datted_black"></div>
+    <div>
+      <p class="summary_title">人均费用</p>
+      <div class="summary_tata">
+        <img src="images/icon_tripCost.png" alt="">
+        <div class="qkk_perCost"><span></span> RMB</div>
+      </div>
+      <div class="h1rem w"></div>
+    </div>
+  </div>
+  <!-- 轨迹地图 -->
+  <div class="mapWrap">
+    <p class="mapTitle">行程概览</p>
+    <div class="mapImg"><img width="500" height="350" src="" alt="轨迹缩略图"></div>
+    <div id="mapContainer">
+    </div>
+    <a href="javascript:void(0);" class="mapClose"><img src="images/btn_close_map.png" alt=""></a>
+  </div>
+  <!-- 行程开始 -->
+  <div class="tripWrap">
+  </div>
+  <!-- 最后一屏 -->
+  <div class="onePage">
+    <div class="result"></div>
+    <img src="images/logo.png" alt="" class="qkk_stamp">
+    <!-- 去app store下载提示 -->
+    <a href="https://itunes.apple.com/cn/app/qu-kan-kan/id1049376054?mt=8" class="btn_toAppStore">我也要写旅行日记</a>
+    <div class="maskLayer"><img width="100%" src="images/toSafari.png" alt=""></div>
+  </div>
+</div>
+</body>
+</html>
